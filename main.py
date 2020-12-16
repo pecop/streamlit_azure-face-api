@@ -9,7 +9,7 @@ def face_recognition():
 
 	subscription_key = st.sidebar.text_input('Enter your API key for Azure Face API', type="password")
 		
-	if subscription_key:
+	if subscription_key is not None:
 
 		root_url = 'https://20201215-pecop.cognitiveservices.azure.com/'
 		endpoint_url = 'face/v1.0/detect'
